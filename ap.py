@@ -1,12 +1,9 @@
-print(9)
-print("Привет ФЕДЯ")
-otv="пусто"
-while otv != "Отстань":
-    print("Ты покакал?")
-    otv = input ()
-    if otv == "Да" or otv == "да":
-        print("Я рад")
-    elif otv == "Нет" or otv == "нет":
-        print("А надо было покакать")
-    else:
-        print("Не понял")
+import pandas as pd
+
+
+Left_Tabl: object = pd.read_excel('C:/PROJECT/Jgtxfnrb2/Excel_Data/Левый.xlsx')
+Right_Tabl: object = pd.read_excel('C:/PROJECT/Jgtxfnrb2/Excel_Data/Правый.xlsx')
+print(Left_Tabl.head(1))
+print(Right_Tabl.head(2))
+Left_Tabl.to_excel('C:/PROJECT/Jgtxfnrb2/Excel_Data/Левый2.xlsx')
+print(Left_Tabl.columns.to_list)
