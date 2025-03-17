@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-print('Goodby')
+print('Goodby-by')
 Left_Tabl: object = pd.read_excel('C:/PROJECT/Jgtxfnrb2/Excel_Data/Левый.xlsx')
 Right_Tabl: object = pd.read_excel('C:/PROJECT/Jgtxfnrb2/Excel_Data/Правый.xlsx')
 print(Left_Tabl.head(1))
